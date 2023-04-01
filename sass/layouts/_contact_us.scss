@@ -1,0 +1,103 @@
+body.form{
+    background-image: url('../../img/history/png/slide4.png');
+    background-repeat: no-repeat;
+    background-color: white;
+    background-position: top center;
+    background-size: 100% 100%;    
+
+    &::before{
+        content: "";
+        position: absolute;
+        top: 90px;
+        right: 0px;
+        height: calc(100vh - 90px); 
+        left: 0px;
+        background-color: rgba(29, 29, 29, 0.7);
+    }
+}
+.contact-us{   
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 120px;
+    margin: 0 auto;
+    z-index: 1;
+    position: relative;
+    height: 100vh;
+    form{
+        width: 50vw;
+        margin: 0 auto;
+    
+        h1{
+            @include title(34px, white)
+        }
+    }
+    
+}
+#formComments input, #formComments textarea{
+    margin: 30px 0;
+    border: 0;
+    border-bottom: 2px solid #151515;
+    
+    padding-bottom: .4375rem;
+    padding-left: 1.875rem;
+    border-radius: 0;
+    background-color: #fdf8f8ab;
+
+    width: 50vw;   
+    font-size: 35px;
+    font-family: $gbi;
+}
+button{
+    margin: 50px 0;
+    max-width: 750px;
+    width: 40%;
+    height: 40px;
+    color: white;
+    background-color: red;
+    font-family: $gsb;
+}
+.comments{    
+    background-image: url("../../img/history/png/search-background.jpg");
+    background-position: top center;        
+    background-size: contain;      
+    .content-comments{
+        padding: 60px 0;
+        .card{
+            max-width: 600px;
+            margin: 14px auto;
+            text-transform: capitalize;
+            border: 6px solid black;
+            border-radius: 51px 0;
+            .card-header{
+                display: flex;
+                justify-content: space-between;
+                font-family: $gbi;
+            }
+            .content-body{
+                background-color: rgba(0,0,0,.03);
+                display: flex;
+                font-family: $gli;
+                input{
+                    height: 40px;
+                    border: none;
+                    border-bottom: 1px solid darkgray;
+                    width: 100%;
+                    text-transform: capitalize;
+                }
+                button{
+                    margin: 0;                    
+                    color: white;
+                }
+                button.edit{
+                    background: linear-gradient(20deg, rgba(250,138,13,1) 42%, rgba(237,55,43,1) 72%, rgba(252,4,12,1) 97%);
+                }
+                button.delete{
+                    width: 70px;
+                    background: linear-gradient(25deg, rgba(250,138,13,1) 19%, rgba(237,55,43,1) 48%, rgba(252,4,12,1) 97%);
+                }
+            }
+        }
+        
+    }
+}

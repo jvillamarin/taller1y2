@@ -1,0 +1,28 @@
+#carouselExampleIndicators {
+  height: 100vh;
+  background: rgb(233, 110, 30);
+  background: linear-gradient(
+    90deg,
+    rgba(233, 110, 30, 1) 0%,
+    rgba(230, 111, 27, 1) 39%,
+    rgba(228, 81, 11, 1) 65%
+  );
+  .carousel-item {
+    img {
+      height: calc(100vh - 90px);
+      object-fit: contain;
+    }
+  }
+  .carousel-caption {
+    bottom: 45px;
+    h5 {      
+      @include title(34px, $WhiteGray);
+      margin: 0;
+    }
+    a {      
+      @include paragraph();
+      text-decoration: underline;
+      color: yellow;
+    }
+  }
+}

@@ -1,0 +1,12 @@
+@mixin title ($size, $color){
+    color: $color;
+    font-family: $gbi;
+    font-size: $size;
+    margin: 20px 0;
+}
+@mixin paragraph (){
+    font-family: $g;
+    font-size: 18px;
+    color: $grayDark;
+}
+

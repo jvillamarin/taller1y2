@@ -1,0 +1,20 @@
+@mixin fontface($nameFont, $path){
+	@font-face {
+	    font-family: "#{$nameFont}";
+	    src:    url('../fonts/'+ $path + '.eot?#iefix') format('embedded-opentype'),
+	    		url('../fonts/'+ $path + '.eot') format('embedded-opentype'),   
+	            url('../fonts/'+ $path + '.ttf') format('truetype'), 
+	            url('../fonts/'+ $path + '.svg#' + $nameFont) format('svg');
+	    font-weight: normal;
+	    font-style: normal;
+	}
+}
+@include fontface($gb, 'canada_type_-_gibson-bold-webfont');
+@include fontface($gb, 'canada_type_-_gibson-bold-webfont');
+@include fontface($gbi, 'canada_type_-_gibson-bolditalic-webfont');
+@include fontface($gi, 'canada_type_-_gibson-italic-webfont');
+@include fontface($gl, 'canada_type_-_gibson-light-webfont');
+@include fontface($gli, 'canada_type_-_gibson-lightit-webfont');
+@include fontface($g, 'canada_type_-_gibson-regular-webfont');
+@include fontface($gsb, 'canada_type_-_gibson-semibold-webfont');
+@include fontface($gsbi, 'canada_type_-_gibson-semiboldit-webfont');
